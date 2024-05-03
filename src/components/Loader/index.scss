@@ -211,7 +211,7 @@
 
     &:after {
       content: '';
-      background: var(--primary);
+      background: var(--color-primary);
       border-radius: 50%;
       height: 24px;
       width: 24px;
@@ -304,7 +304,7 @@
 
       &:after {
         content: '';
-        background: var(--primary);
+        background: var(--color-primary);
         height: 13px;
         width: 13px;
         position: absolute;
@@ -317,7 +317,7 @@
 
       &:before {
         content: '';
-        background: var(--primary);
+        background: var(--color-primary);
         height: 10px;
         width: 10px;
         position: absolute;
@@ -387,7 +387,7 @@
     display: block;
     border: 2px solid;
     border-radius: 50%;
-    border-color: transparent var(--primary) var(--primary);
+    border-color: transparent var(--color-primary) var(--color-primary);
     animation: cssload-spin 690ms infinite linear;
     @keyframes cssload-spin {
       100% {
