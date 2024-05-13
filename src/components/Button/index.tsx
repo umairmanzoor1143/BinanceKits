@@ -1,9 +1,18 @@
 import React from 'react';
+import './button.scss';
 
-type Props = {};
+type Props = {
+  btntext: string;
+  text: string;
+};
 
 const index = (props: Props) => {
-  return <div>index</div>;
+  const { btntext, text } = props;
+  return (
+    <a href='#' className='btn'>
+      {btntext}
+    </a>
+  );
 };
 
 export default index;
