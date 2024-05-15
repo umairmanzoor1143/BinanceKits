@@ -25,16 +25,19 @@ function home() {
           imageSrc={imageSrc}
           text='mediakits'
           paragraph='Mediakits is expanding to include new functionality and additional features you can’t get anywhere else!'
+          btndata='Read More'
         />
         <Card
           imageSrc={otherSrc}
           text='LINKITS'
           paragraph='Showcase multiple links on your social, customize to fit your brand, and embed videos to stand out!'
+          btndata='Stay Updated'
         />
         <Card
           imageSrc={lastSrc}
           text='NEW APP COMING SOON'
           paragraph='Coming Soon! An all-in-one management system just for creators like you!'
+          btndata='Stay Updated'
         />
       </div>
     </section>

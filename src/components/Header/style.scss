@@ -19,6 +19,9 @@ body {
   align-items: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  // background: var(--color-textWhite);
 }
 a {
   text-decoration: $anchor;
@@ -27,4 +30,7 @@ a {
   display: $mydisplay;
   list-style: none;
   gap: 30px;
+}
+.navbar .menu ul li a{
+  color: var(--color-textWhite);
 }

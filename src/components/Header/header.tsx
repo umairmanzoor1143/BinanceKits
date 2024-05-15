@@ -1,6 +1,7 @@
 import Button from 'components/Button';
 import './style.scss';
 import '../../index.css';
+import logo from '../../assets/images/logo.png';
 
 function header() {
   return (
@@ -8,7 +9,7 @@ function header() {
       <nav className='navbar'>
         <div>
           <a href='#'>
-            <img src='assets/images/logo.png' alt='Logo' />
+            <img src={logo} width={172} alt='Logo' />
           </a>
         </div>
         <div className='menu'>

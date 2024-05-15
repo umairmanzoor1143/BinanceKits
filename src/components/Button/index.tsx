@@ -9,9 +9,11 @@ type Props = {
 const index = (props: Props) => {
   const { btntext, text } = props;
   return (
-    <a href='#' className='btn'>
-      {btntext}
-    </a>
+    <>
+      <a href='#' className='btn'>
+        {btntext} {text}
+      </a>
+    </>
   );
 };
 

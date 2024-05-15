@@ -7,10 +7,11 @@ type Props = {
   imageSrc: string;
   text: string;
   paragraph: string;
+  btndata : string;
 };
 
 function card(props: Props) {
-  const { imageSrc, text, paragraph } = props;
+  const { imageSrc, text, paragraph, btndata } = props;
   return (
     <>
       <section className='Card'>
@@ -22,7 +23,7 @@ function card(props: Props) {
         </div>
         <div className='card_desc'>
           <p>{paragraph}</p>
-          <Button btntext='Read More' text='' />
+          <Button btntext= {btndata} text='' />
         </div>
       </section>
     </>
@@ -30,3 +31,4 @@ function card(props: Props) {
 }
 
 export default card;
+

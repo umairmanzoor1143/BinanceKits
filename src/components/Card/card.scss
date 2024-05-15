@@ -52,3 +52,19 @@ body {
   line-height: 28px;
   margin: 20px 0;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+  .parentCard {
+    flex-wrap: wrap;
+    margin: 0 15px;
+    gap: 30px;
+  }
+  .Card {
+    width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .Card {
+    width: 100%;
+  }
+}
