@@ -82,10 +82,22 @@
   --color-ToastBg: #707A8A;
   --color-TwoColorIcon: #CACED3;
   --color-BadgeBg: rgba(240, 185, 11, 0.1);
+  --radii-2xs: 2px;
+    --radii-xs: 4px;
+    --radii-s: 6px;
+    --radii-m: 8px;
+    --radii-l: 10px;
+    --radii-2l: 12px;
+    --radii-xl: 16px;
+    --radii-2xl: 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Binance PLEX", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

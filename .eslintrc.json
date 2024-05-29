@@ -19,7 +19,8 @@
   //   "plugins": ["react",  "@typescript-eslint", ],
   "rules": {
     "no-duplicate-imports": "error",
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": 0,
     "react/react-in-jsx-scope": "off",
     "no-useless-escape": "off",
     "no-extra-boolean-cast": "off",

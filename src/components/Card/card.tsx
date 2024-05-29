@@ -7,10 +7,10 @@ type Props = {
   imageSrc: string;
   text: string;
   paragraph: string;
-  btndata : string;
+  btndata: string;
 };
 
-function card(props: Props) {
+const Card = (props: Props) => {
   const { imageSrc, text, paragraph, btndata } = props;
   return (
     <>
@@ -23,12 +23,11 @@ function card(props: Props) {
         </div>
         <div className='card_desc'>
           <p>{paragraph}</p>
-          <Button btntext= {btndata} text='' />
+          <Button>{btndata}</Button>
         </div>
       </section>
     </>
   );
-}
+};
 
-export default card;
-
+export default Card;

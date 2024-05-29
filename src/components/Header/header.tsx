@@ -19,12 +19,16 @@ function header() {
             </li>
             <li>
               <a href='#'>
-                <Button text='Login' btntext='' />
+                <Button size='small' rounded variant='secondary'>
+                  Log In
+                </Button>
               </a>
             </li>
             <li>
               <a href='#'>
-                <Button text='Start for free' btntext='' />
+                <Button size='small' rounded>
+                  Sign Up
+                </Button>
               </a>
             </li>
           </ul>
