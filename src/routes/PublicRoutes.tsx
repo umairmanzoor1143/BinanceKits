@@ -8,6 +8,7 @@ const RcAuthWrapper = Loadable(lazy(() => import("pages/auth/AuthWrapper")))
 const HomePage = Loadable(lazy(() => import("pages/home")))
 const RcAppLayout = Loadable(lazy(() => import("layout/AppLayout")))
 const RcPrivateLayout = Loadable(lazy(() => import("layout/PrivateLayout")))
+const SignIn = Loadable(lazy(() => import("pages/auth/SignIn")))
 // const RequestCode = Loadable(lazy(() => import('pages/auth/RequestCode')));
 // const VerifyCode = Loadable(lazy(() => import('pages/auth/VerifyCode')));
 // const Password = Loadable(lazy(() => import('pages/auth/Password')));
@@ -20,7 +21,7 @@ export const publicRoutes: RouteObject[] = [
     element: (
       <AuthIsNotSignedIn>
         <RcAppLayout>
-          <RcAuthWrapper />
+          <RcAuthWrapper className="authpage-scroll" />
         </RcAppLayout>
       </AuthIsNotSignedIn>
     ),
@@ -29,14 +30,10 @@ export const publicRoutes: RouteObject[] = [
         path: "/",
         element: <HomePage />,
       },
-      {
-        path: "/signin",
-        element: <RcPrivateLayout />,
-      },
-      {
-        path: "/signup",
-        element: <div>SignUp</div>,
-      },
+      // {
+      //   path: "/signup",
+      //   element: <div>SignUp</div>,
+      // },
       // {
       //   path: '/verify',
       //   element: <Password />,
@@ -64,6 +61,20 @@ export const publicRoutes: RouteObject[] = [
       {
         path: "/mail",
         element: <HomePage />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: (
+      <AuthIsNotSignedIn>
+        <RcAuthWrapper className="sign_up_page" />
+      </AuthIsNotSignedIn>
+    ),
+    children: [
+      {
+        path: "/signin",
+        element: <SignIn />,
       },
     ],
   },

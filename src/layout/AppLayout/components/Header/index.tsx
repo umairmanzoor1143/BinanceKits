@@ -41,7 +41,7 @@ const Header = () => {
             Blog
           </Button>
           <Button>Log In</Button>
-          <Button>Sign Up</Button>
+          {/* <Button>Sign Up</Button> */}
         </div>
       </div>
       <ModeToggle />

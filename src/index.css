@@ -90,3 +90,6 @@ code {
 .h-100 {
   height: 100%;
 }
+.dvh-100 {
+  height: 100dvh;
+}

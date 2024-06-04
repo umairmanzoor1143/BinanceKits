@@ -1,10 +1,11 @@
 import { ScrollArea } from "components/ui/scroll-area"
 import React from "react"
 import { Outlet } from "react-router-dom"
-const AuthWrapper = () => {
+import classNames from "classnames"
+const AuthWrapper = ({ className }: { className: string }) => {
   return (
     <>
-      <ScrollArea className="authpage-scroll min-h-full max-w-full">
+      <ScrollArea className={classNames(className, "h-full w-full")}>
         <Outlet />
       </ScrollArea>
     </>
