@@ -1,9 +1,10 @@
 import { Button } from "components/ui/button"
 import { ModeToggle } from "components/ToggleButton"
 import { useToast } from "hooks/useToaster"
-
+import { useNavigate } from "react-router-dom"
 const Header = () => {
   const { toast } = useToast()
+  const navigate = useNavigate()
   return (
     <div className="w-full flex justify-between items-center gap-2 p-2">
       <div className="navigation-bar flex justify-between items-center w-full">
@@ -40,8 +41,7 @@ const Header = () => {
           >
             Blog
           </Button>
-          <Button>Log In</Button>
-          {/* <Button>Sign Up</Button> */}
+          <Button onClick={() => navigate("/signin")}>Log In</Button>
         </div>
       </div>
       <ModeToggle />
